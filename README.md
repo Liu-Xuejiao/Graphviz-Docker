@@ -4,9 +4,9 @@ Install Graphviz into Fedora 23
 
 1. Copy Vagrantfile into /DOT-FILE-PATH/, use vagrant setup graphviz docker container:
    > vagrant up
-
-Or
-
+   
+   Or 
+   
    Use docker run command setup:
    > docker run --name graphviz -v /DOT-FILE-PATH/:/tmp --privileged xliu0106/graphviz:2.39
    
