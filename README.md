@@ -2,15 +2,15 @@
 
 Install Graphviz into Fedora 23
 
-1. Use vagrant setup graphviz docker container:
+1. Copy Vagrantfile into /DOT-FILE-PATH/, use vagrant setup graphviz docker container:
    > vagrant up
 
 Or
 
-2. Use docker run command setup:
+   Use docker run command setup:
    > docker run --name graphviz -v /DOT-FILE-PATH/:/tmp --privileged xliu0106/graphviz:2.39
    
-Run dot command:
+2. Run dot command:
    > docker exec graphviz dot -Tpng /tmp/test.dot -o /tmp/output.png
 
-Then PNG file could be found in /DOT-FILE-PATH/.
+3. Then PNG file could be found in /DOT-FILE-PATH/.
