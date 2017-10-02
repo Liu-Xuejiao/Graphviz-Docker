@@ -14,7 +14,7 @@ Vagrant.configure(2) do |config|
       d.privileged = true
       d.image = "xliu0106/graphviz:2.39"
       d.cmd = ["./graphviz.sh"]
-      d.volumes = ["#{Dir.pwd}/dot:/tmp"]
+      d.volumes = ["#{Dir.pwd}:/tmp"]
     end
   end
 end
