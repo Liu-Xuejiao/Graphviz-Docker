@@ -12,7 +12,7 @@ Vagrant.configure(2) do |config|
     c.vm.provider "docker" do |d|
       d.name = "graphviz"
       d.privileged = true
-      d.image = "xliu0106/graphviz:2.39"
+      d.image = "xliu0106/graphviz:2.40.1"
       d.cmd = ["./graphviz.sh"]
       d.volumes = ["#{Dir.pwd}/dot:/tmp"]
     end
